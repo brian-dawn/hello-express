@@ -6,7 +6,7 @@ app.get('/', function (req, res) {
 })
 
 let port = parseInt(process.env.SERVER_PORT, 10);
-
+console.log("hi!" + port);
 app.listen(port, function () {
   console.log('Example app listening on port' + port)
 })

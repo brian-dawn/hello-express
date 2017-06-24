@@ -5,6 +5,8 @@ app.get('/', function (req, res) {
   res.send('Hello World!')
 })
 
-app.listen(80, function () {
-  console.log('app Example app listening on port 80!')
+let port = process.env.SERVER_PORT;
+
+app.listen(port, function () {
+  console.log('app Example app listening on port' + port)
 })

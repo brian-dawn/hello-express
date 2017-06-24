@@ -5,8 +5,7 @@ app.get('/', function (req, res) {
   res.send('Hello World!')
 })
 
-let port = parseInt(process.env.SERVER_PORT, 10);
-console.log("hi!" + port);
+let port = 8081;
 app.listen(port, function () {
   console.log('Example app listening on port' + port)
 })
